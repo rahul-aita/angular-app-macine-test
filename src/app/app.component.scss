@@ -1,0 +1,50 @@
+.context-menu {
+    position: fixed;
+    display: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    list-style-type: none;
+    z-index: 9999;
+  }
+  
+  .context-menu li {
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .context-menu li:hover {
+    background-color: #eaeaea;
+  }
+  .sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    transition: all 0.3s;
+  }
+  
+  .sidebar-container.collapsed {
+    width: 50px;
+    transition: all 0.3s;
+  }
+  
+  .toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+  }
+  
+  .toggle-icon i {
+    font-size: 1.5rem;
+    transition: all 0.3s;
+  }
+  
+  .toggle-icon i.fa-chevron-right {
+    transform: rotate(180deg);
+  }
+  
+  

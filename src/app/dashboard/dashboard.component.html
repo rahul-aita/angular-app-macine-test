@@ -1,0 +1,30 @@
+<div class="conatiner">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Actions</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of data">
+                        <td>
+                            {{ item.id}}
+                        </td>
+                        <td>
+                            {{ item.name}}
+                        </td>
+                        <td>
+                            <button (click)="openEditPopUp(item)"></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
